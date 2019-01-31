@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateGroup_Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group name"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="15dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Enter a group Name"
+        android:inputType="textPersonName" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="Apartment"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="House"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="Group"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:background="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="Other"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/groupMemberTextView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginTop="7dp"
+        android:text="GROUP MEMBER"
+        android:gravity="center|left"
+        android:background="#D3D3D3"/>
+    <ImageButton
+        android:id="@+id/addImageButton"
+        android:layout_below="@id/groupMemberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_black_24dp"/>
+
+    <TextView
+        android:id="@+id/addPersonToGroupTextView"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/groupMemberTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="12dp"
+        android:text="Add person to group"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+    <ImageButton
+        android:id="@+id/linkImageButton"
+        android:layout_below="@id/addImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_link_black_24dp"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/addPersonToGroupTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="12dp"
+        android:text="Invite via link"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+
+</RelativeLayout>
